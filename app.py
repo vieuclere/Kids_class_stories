@@ -19,7 +19,7 @@ if st.button("生成故事") and char_input:
             "字數約150字，內容有趣、友善，適合台灣孩子閱讀。"
         )
         response = openai.chat.completions.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7
         )
